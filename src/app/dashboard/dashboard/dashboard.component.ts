@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faSignOutAlt, faUser } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from 'src/app/shared/services/auth.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  faSignOutAlt = faSignOutAlt;
+  faUser = faUser;
 
-  ngOnInit() {    
+  constructor(public authService: AuthService) { }
+
+  ngOnInit() {
   }
 
 }

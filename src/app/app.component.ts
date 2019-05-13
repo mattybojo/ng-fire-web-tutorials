@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faUser, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-fire-web-tutorials';
+  faUser = faUser;
+  faSignOutAlt = faSignOutAlt;
 }

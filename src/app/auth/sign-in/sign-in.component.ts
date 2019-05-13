@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { faGooglePlusG, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-sign-in',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
-  constructor() { }
+  faGooglePlusG = faGooglePlusG;
+  faFacebook = faFacebook;
+
+  constructor(public authService: AuthService) { }
 
   ngOnInit() {
   }

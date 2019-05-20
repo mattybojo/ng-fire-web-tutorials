@@ -48,17 +48,6 @@ h6 {
   font-weight: 600;
 }
 
-.px-logo {
-  display: block;
-  clear: both;
-  margin: 0 auto 20px;
-  width: 220px;
-}
-
-.px-logo a img {
-  width: 100%;
-}
-
 .displayTable {
   display: table;
   width: 100%;
@@ -278,7 +267,6 @@ input:-moz-placeholder {
 
 .nav-link {
   padding: 1.5rem 1rem;
-  border-bottom: 1px solid #dde0e2;
   cursor: pointer;
 }
 
@@ -656,9 +644,5 @@ body .table thead th {
 
   .authBlock {
     box-shadow: none
-  }
-
-  .px-logo {
-    display: none;
   }
 }

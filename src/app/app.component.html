@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<ng-sidebar-container>
+
+    <ng-sidebar [(opened)]="_opened" [mode]="'over'" [closeOnClickOutside]="true" [dock]="true" [dockedSize]="'50px'">
+        <p>Sidebar contents</p>
+    </ng-sidebar>
+
+    <!-- Page content -->
+    <div ng-sidebar-content>
+        <app-header (onSidebarToggle)="onSidebarToggle()"></app-header>
+        <router-outlet></router-outlet>
+    </div>
+
+  </ng-sidebar-container>

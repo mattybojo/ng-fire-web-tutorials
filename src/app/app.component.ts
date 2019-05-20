@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faUser, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,11 @@ import { faUser, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  faUser = faUser;
-  faSignOutAlt = faSignOutAlt;
+  faBars = faBars;
+
+  _opened = false;
+
+  onSidebarToggle() {
+    this._opened = !this._opened;
+  }
 }

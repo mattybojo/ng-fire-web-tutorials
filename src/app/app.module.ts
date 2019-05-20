@@ -10,6 +10,8 @@ import { environment } from '../environments/environment';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthService } from './shared/services/auth.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SidebarModule } from 'ng-sidebar';
+import { HeaderComponent } from './shared/components/header/header.component';
 
 const routes: Routes = [{
   path: '',
@@ -25,7 +27,8 @@ const routes: Routes = [{
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ const routes: Routes = [{
     AngularFireAuthModule,
     AngularFirestoreModule,
     RouterModule.forRoot(routes),
-    FontAwesomeModule
+    FontAwesomeModule,
+    SidebarModule.forRoot()
   ],
   providers: [
     AuthService

@@ -1,6 +1,12 @@
 # NgFireWebTutorials
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+A demo project cobbled together from various Angular tutorials.
+
+List of tutorials:
+
+- https://www.positronx.io/full-angular-7-firebase-authentication-system
+
+NOTE: This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
 ## Development server
 

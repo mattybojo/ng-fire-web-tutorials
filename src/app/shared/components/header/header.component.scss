@@ -2,19 +2,35 @@
     background-color: #e6e6e6;
     width: 100%;
     height: 50px;
-}
-
-.navbar-brand-span {
-    width: 200px;
-    text-align: center;
+    padding: 6px 0 !important;
 }
 
 .navbar-brand {
+    width: 200px;
+    text-align: center;
     margin-right: 0px;
+    border-right: 1px solid #d2d6de;
+    padding: 10px 0px;
 }
 
 .menu-icon {
+    padding: 13px 13px !important;
+}
+
+a {
     border-left: 1px solid #d2d6de;
-    border-right: 1px solid #d2d6de;
-    padding: 13px 13px;
+    cursor: pointer;
+}
+
+.nav-link {
+    color: rgb(33,37,41) !important;
+}
+
+.nav-text-link {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+a.nav-link:hover {
+    background: #efefef;
 }

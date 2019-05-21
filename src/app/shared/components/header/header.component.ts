@@ -1,5 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,7 @@ export class HeaderComponent implements OnInit {
 
   @Output() onSidebarToggle: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  constructor() {}
+  constructor(public authService: AuthService) {}
 
   ngOnInit() {}
 

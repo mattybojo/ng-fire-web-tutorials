@@ -2,11 +2,11 @@ app-header {
     padding-top: 50px;
 }
 
-ng-sidebar-container {
-    height: 100vh;
-}
-
 :host ::ng-deep .ng-sidebar {
     background-color: #f8f9fa;
     width: 300px;
+}
+
+.sidebar-content {
+    height: 100%;
 }

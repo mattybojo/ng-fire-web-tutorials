@@ -1,35 +1,33 @@
-<div class="displayTable">
-  <div class="displayTableCell">
-    <div class="authBlock">
-      <h3>Sign In</h3>
-      <div class="formGroup">
-        <input type="text" class="formControl" placeholder="Username" #userName required>
-      </div>
-      <div class="formGroup">
-        <input type="password" class="formControl" placeholder="Password" #userPassword required>
-      </div>
-      <div class="formGroup">
-        <button class="btn btn-primary" (click)="authService.signIn(userName.value, userPassword.value)">Log in</button>
-      </div>
-      <div class="formGroup">
-        <span class="or"><span class="orInner">Or</span></span>
-      </div>
-      <div class="formGroup">
-        <button type="button" class="btn googleBtn" (click)="authService.googleAuth()">
-          <fa-icon [icon]="faGooglePlusG"></fa-icon>Log in with Google
-        </button>
-      </div>
-      <div class="formGroup">
-        <button type="button" class="btn facebookBtn" (click)="authService.facebookAuth()">
-          <fa-icon [icon]="faFacebook"></fa-icon>Log in with Facebook
-        </button>
-      </div>
-      <div class="forgotPassword">
-        <span routerLink="/auth/forgot-password">Forgot password?</span>
-      </div>
+<div class="container-fluid">
+  <div class="auth-block">
+    <h3>Sign In</h3>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Username" #userName required>
     </div>
-    <div class="redirectToLogin">
-      <span>Don't have an account? <span class="redirect" routerLink="/auth/sign-up">Sign Up</span></span>
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password" #userPassword required>
     </div>
+    <div class="form-group">
+      <button class="btn btn-primary" (click)="authService.signIn(userName.value, userPassword.value)">Log in</button>
+    </div>
+    <div class="form-group">
+      <span class="or"><span class="orInner">Or</span></span>
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn google-btn" (click)="authService.googleAuth()">
+        <fa-icon [icon]="faGooglePlusG"></fa-icon>Log in with Google
+      </button>
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn facebook-btn" (click)="authService.facebookAuth()">
+        <fa-icon [icon]="faFacebook"></fa-icon>Log in with Facebook
+      </button>
+    </div>
+    <div class="forgot-password">
+      <span routerLink="/auth/forgot-password">Forgot password?</span>
+    </div>
+  </div>
+  <div class="login-redirect">
+    <span>Don't have an account? <span class="redirect" routerLink="/auth/sign-up">Sign Up</span></span>
   </div>
 </div>
